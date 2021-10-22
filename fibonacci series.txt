@@ -1,0 +1,35 @@
+/*Name=Shweta Girish Bajpai
+ Roll no=FY20L1205
+ Assignment 4*/
+
+#include<stdio.h>
+int fibo(int);
+
+int main(void)
+{    
+    int terms;
+
+    printf("Enter terms: ");
+    scanf("%d", &terms);       
+
+    for(int n= 0; n< terms; n++)
+    {
+        printf("%d ", fibo(n));
+    }
+
+    return 0; 
+}
+
+int fibo(int num)
+{   
+    if(num == 0 || num == 1)
+    {
+        return num;
+    }
+
+    else
+    {
+        return fibo(num-1) + fibo(num-2);
+    }
+
+}
